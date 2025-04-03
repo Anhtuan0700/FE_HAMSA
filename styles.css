@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Syne', sans-serif;
+    height: 100%;
+}
+
+
+header {
+    background-color: #CDFF9A;
+    height: 148px;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 36px;
+    margin-left: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+}
+
+.logo-container {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+}
+
+.logo-ha {
+    line-height: 1;
+    position: relative;
+}
+
+.logo-line {
+    width: 60px;
+    height: 4px;
+    background-color: black;
+    margin-left: 5px;
+}
+
+.logo-sport {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.icons span {
+    margin-left: 25px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+
+.main-container {
+    display: flex;
+    background-color: #07272E;
+    justify-content: flex-start;
+    position: relative;
+
+    height: calc(100vh - 148px);
+}
+
+.left-section {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    width: 50%;
+    height: calc(100vh - 148px);
+}
+
+.line-container {
+    width: 151px;
+    background-color: transparent;
+    margin-left: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 13%;
+    width: 1px;
+    height: 100%;
+    background-color: white;
+}
+
+
+
+.text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.vertical-container {
+    width: 52px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    left: 6%;
+}
+
+.vertical-text {
+    color: #CDFF9A;
+    font-size: 12px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    margin-top: auto;
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.circle-icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #07272E;
+    color: #CDFF9A;
+    font-size: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #CDFF9A;
+    margin-top: 5px;
+    transform: rotate(270deg);
+}
+
+.follow-us {
+    color: #CDFF9A;
+    font-size: 14px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    margin-top: 100px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: auto;
+    /* Đẩy phần social-icons xuống đáy của vertical-container */
+    padding-bottom: 30px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+.text-content {
+    margin-top: 20rem;
+    /* Di chuyển xuống dưới */
+    flex-direction: column;
+    gap: 15px;
+}
+
+.number {
+    font-weight: 600;
+    font-size: 250px;
+    opacity: 0.1;
+    position: absolute;
+    top: 45%;
+    color: #CDFF9A;
+    left: 28%;
+    transform: translateY(-50%) scaleX(1.2);
+}
+
+h6 {
+    font-size: 16px;
+    color: #CDFF9A;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 36px;
+    color: white;
+    font-family: 'Syne', sans-serif;
+    font-weight: 500px;
+    max-width: 60%;
+    line-height: 1.2;
+}
+
+.see-more {
+    background-color: #CDFF9A;
+    padding: 10px 15px;
+}
+
+
+
+.right-section {
+    flex: 1;
+    position: relative;
+}
+
+.right-section img {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 20px;
+    right: 15%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.slider-controls span {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+.arrow-left {
+    transform: scaleX(-1);
+}
+
+.catalog-menu {
+    display: none;
+    position: absolute;
+    top: 148px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 18rem;
+    font-family: 'Syne', sans-serif;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.catalog-menu.show {
+    display: flex;
+}
+
+.catalog-menu ul {
+    width: 25%;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 2.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.catalog-menu li {
+    display: flex;
+    align-items: center;
+    padding: 8px 30px;
+    width: 100%;
+
+    justify-content: space-between;
+}
+
+.catalog-menu li a {
+    color: #07272E;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Syne', sans-serif;
+    margin-right: 10px;
+}
+
+.catalog-menu .arrow {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    border-bottom: 1px solid rgba(11, 11, 11, 0.3);
+    width: 90%;
+    margin-left: 20px;
+}
+
+.catalog-menu .img-container {
+    display: flex;
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.image-item img {
+    width: 100%;
+    max-width: 200px;
+    /* Không lớn hơn 150px */
+    height: auto;
+}
+
+.image-item p {
+    font-size: 14px;
+    color: #333;
+    /* Màu chữ xám đậm */
+    margin-top: 5px;
+    /* Tạo khoảng cách giữa ảnh và chữ */
+    font-weight: bold;
+}
